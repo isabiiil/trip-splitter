@@ -14,7 +14,7 @@ export default function About() {
       <div className="py-16 w-full h-full flex items-center justify-center bg-green-100 bg-blend-hard-light">
         <div className="p-8 bg-white rounded-lg shadow-lg w-2/4 h-auto">
           <p className="py-4 text-4xl">
-            Splitting bills on trips together has never been easier!
+            Splitting multiple checks has never been easier!
           </p>
           <p className="text-xl">
             Trip Splitter allows groups to split their expenses in a streamlined way. You don't have to trouble the restaurant by making them charge multiple credit cards. Instead, you can have one person pay and the rest will reimburse them at the end of the trip. Even if multiple people foots the bill, the total reimbursements are easily calculated for you so you don't have to worry during vacations or outings.

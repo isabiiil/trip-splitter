@@ -28,13 +28,19 @@ export default function Expenses() {
       amount: "$800.00",
       date: "June 8",
     },
+    {
+      label: "Plane Tickets",
+      payer: "Crispin & Basilio",
+      amount: "$2,000.00",
+      date: "June 8",
+    },
   ];
 
   return (
-    <>
+    <div className="h-screen bg-green-100">
       <Navbar />
-      <div className="h-96 flex items-center justify-center">
-        <div className="w-4/12 h-auto bg-white p-6 rounded-lg shadow-xl divide-y divide-green-700">
+      <div className="h-auto m-16 flex items-bottom justify-center">
+        <div className="w-4/12 h-auto bg-white p-6 rounded-lg shadow-2xl divide-y divide-green-700">
           {transactions.map((data) => {
             return (
               <Transaction
@@ -47,6 +53,13 @@ export default function Expenses() {
           })}
         </div>
       </div>
-    </>
+      <div className="absolute bottom-0 right-0 p-16">
+        <div className="rounded-2xl border shadow-2xl bg-green-700 p-8">
+          <p className="text-white text-xl">
+            + Add New Transaction
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }
