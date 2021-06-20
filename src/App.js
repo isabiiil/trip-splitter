@@ -8,6 +8,7 @@ import About from "./About.jsx";
 import Expenses from "./Expenses.js";
 import Balances from "./Balances.js";
 import Login from "./Login.js";
+import NewTransaction from "./New.js";
 
 export function Home() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
     <>
       <Router>
         <Switch>
+          <Route exact path="/new" component={NewTransaction} />
           <Route exact path="/login" component={Login} /> 
           <Route exact path="/balance" component={Balances} />
           <Route exact path="/expenses" component={Expenses} />

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar.jsx";
 import Transaction from "./Transaction.jsx";
+import { Link } from "react-router-dom";
 
 export default function Expenses() {
   const transactions = [
@@ -54,11 +55,11 @@ export default function Expenses() {
         </div>
       </div>
       <div className="absolute bottom-0 right-0 p-16">
-        <div className="rounded-2xl border shadow-2xl bg-green-700 p-8">
-          <p className="text-white text-xl">
+      <Link to="/new" className="text-white text-xl">
+          <div className="rounded-2xl border shadow-2xl bg-green-700 p-8">
             + Add New Transaction
-          </p>
-        </div>
+          </div>
+        </Link>
       </div>
     </div>
   );
